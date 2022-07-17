@@ -1,0 +1,69 @@
+.feild{
+    border-bottom: 2px solid green;
+    padding-bottom: 55px;
+    cursor: none;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+}
+.bat{
+ transition: transform .5s ease-in-out;
+ transform-origin: top right;
+
+}
+
+.feild:hover .bat{
+    transform: rotate(-110deg);
+    width: 200px;
+    height: 200px;
+    transition-delay: 1.45s;
+    
+}
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: red;
+    position: relative;
+    left: 100%;
+    top: -140px;
+
+}
+.feild:hover .ball{
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes ball {
+    0%   {left:100%; top:-140px;}
+    50%  {left:50%; top:55px;}
+    75% {left:2%; top:-40px;}
+    100% {left:100%; top:-140px;}
+
+}
+.six{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 10px 5px 5px rgb(233, 233, 233);
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid black;
+    transform: scale(0);
+    position: absolute;
+    left: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-delay: 2.3s;
+}
+h1{
+    color: red;
+    font-size: 50px;
+}
+.feild:hover .six{
+    transform: scale(1.5)
+}
